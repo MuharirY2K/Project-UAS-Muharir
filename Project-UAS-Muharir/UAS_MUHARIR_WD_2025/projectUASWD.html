@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <!-- Bootstrap CSS -->
+    <link href="../bt/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        /* Sedikit styling inline untuk efek khusus */
+        .profile-img {
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+            border: 5px solid #343a40;
+        }
+        .skill-bar {
+            height: 10px;
+        }
+        .project-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        section {
+            padding: 80px 0;
+        }
+    </style>
+</head>
+<body class="bg-dark text-white">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">MUHARIR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tentang Saya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Keahlian</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portofolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="d-flex align-items-center min-vh-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-3">Halo, Saya <span class="text-primary">Muharir Al Hafidh</span></h1>
+                    <h3 class="text-muted mb-4">Web Developer & Designer</h3>
+                    <p class="lead mb-4">Saya membuat website yang indah dan fungsional dengan fokus pada pengalaman pengguna dan kode yang bersih.</p>
+                    <a href="#contact" class="btn btn-primary btn-lg px-4 me-2">Hubungi Saya</a>
+                    <a href="#portfolio" class="btn btn-outline-light btn-lg px-4">Portofolio</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="../bt/css/WhatsApp Image 2025-07-08 at 17.52.14.jpeg" alt="Foto profil profesional developer dengan latar belakang gelap dan memakai kemeja formal" class="profile-img rounded-circle shadow-lg mt-4 mt-lg-0">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="fw-bold">Tentang <span class="text-primary">Saya</span></h2>
+                    <div class="divider bg-primary mx-auto my-3"></div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded shadow">
+                            <div class="carousel-item active">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/caa3a794-d85d-4d6c-a9fd-27cb888eaab0.png" class="d-block w-100" alt="Saat bekerja di kantor dengan dua layar monitor">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/38869487-9aa6-429a-9c75-a680d875ffc0.png" class="d-block w-100" alt="Diskusi tim tentang pengembangan proyek">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bd937327-b236-4dd7-b8bd-8e6274bfacd7.png" class="d-block w-100" alt="Melakukan review kode program bersama kolega">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <h3 class="fw-bold mb-3">Siapa Saya?</h3>
+                    <p>Saya adalah seorang Web Developer berpengalaman dengan passion menciptakan solusi digital yang inovatif. Dengan lebih dari 5 tahun pengalaman, saya telah membantu banyak klien mencapai tujuan bisnis mereka melalui website yang efektif.</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <p><i class="bi bi-chevron-right text-primary me-2"></i> <strong>Nama:</strong> Muharir Al Hafidh</p>
+                            <p><i class="bi bi-chevron-right text-primary me-2"></i> <strong>Email:</strong> muh4r1r4lh4f1dh@gmail.com</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><i class="bi bi-chevron-right text-primary me-2"></i> <strong>Pengalaman:</strong> 5+ Tahun</p>
+                            <p><i class="bi bi-chevron-right text-primary me-2"></i> <strong>Freelance:</strong> Tersedia</p>
+                        </div>
+                    </div>
+                    
+                    <p class="mt-4">Saya selalu berusaha untuk belajar teknologi terbaru dan mengimplementasikannya dalam proyek-proyek saya. Percaya bahwa desain yang baik dimulai dengan kode yang baik.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="fw-bold">Keahlian <span class="text-primary">Saya</span></h2>
+                    <div class="divider bg-primary mx-auto my-3"></div>
+                    <p>Berikut adalah teknologi dan keterampilan yang saya kuasai</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>HTML</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>JavaScript</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Bootstrap</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>React</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Node.js</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="bg-black">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="fw-bold">Portofolio <span class="text-primary">Saya</span></h2>
+                    <div class="divider bg-primary mx-auto my-3"></div>
+                    <p>Beberapa proyek terakhir yang saya kerjakan</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card bg-dark border-0 h-100">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/60389111-1c14-45bb-939c-7e522ba6ad62.png" class="card-img-top" alt="Tampilan depan website e-commerce dengan produk fashion yang ditampilkan">
+                        <div class="card-body text-white">
+                            <h5 class="card-title">Website E-commerce</h5>
+                            <p class="card-text">Website toko online dengan fitur keranjang belanja, pembayaran, dan manajemen produk.</p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-primary">HTML</span>
+                                <span class="badge bg-primary">CSS</span>
+                                <span class="badge bg-primary">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark border-0 h-100">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a31b06a2-842a-4c09-8e2d-3453ba5f6ddb.png" class="card-img-top" alt="Dashboard admin dengan grafik dan statistik penggunaan aplikasi">
+                        <div class="card-body text-white">
+                            <h5 class="card-title">Sistem Manajemen Konten</h5>
+                            <p class="card-text">CMS custom dengan multi-user role, editor konten WYSIWYG, dan manajemen media.</p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-primary">PHP</span>
+                                <span class="badge bg-primary">MySQL</span>
+                                <span class="badge bg-primary">jQuery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark border-0 h-100">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4646c8da-00ad-42f0-ac18-2aa1b1411246.png" class="card-img-top" alt="Aplikasi mobile dengan tampilan kalender dan daftar tugas berwarna-warni">
+                        <div class="card-body text-white">
+                            <h5 class="card-title">Aplikasi Produktivitas</h5>
+                            <p class="card-text">Aplikasi manajemen tugas dengan kalender, pengingat, dan kolaborasi tim.</p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-primary">React</span>
+                                <span class="badge bg-primary">Node.js</span>
+                                <span class="badge bg-primary">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="fw-bold">Hubungi <span class="text-primary">Saya</span></h2>
+                    <div class="divider bg-primary mx-auto my-3"></div>
+                    <p>Saya selalu terbuka untuk peluang kerja sama dan diskusi proyek</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="mb-4">
+                        <h4 class="fw-bold mb-3">Informasi Kontak</h4>
+                        <p><i class="bi bi-geo-alt-fill text-primary me-2"></i> Banda Aceh, Indonesia</p>
+                        <p><i class="bi bi-envelope-fill text-primary me-2"></i> muh4r1r4lh4f1dh@gmail.com</p>
+                        <p><i class="bi bi-phone-fill text-primary me-2"></i> +62 895-3200-08400</p>
+                    </div>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-light rounded-circle p-0" style="width: 40px; height: 40px; line-height: 40px;">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light rounded-circle p-0" style="width: 40px; height: 40px; line-height: 40px;">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light rounded-circle p-0" style="width: 40px; height: 40px; line-height: 40px;">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light rounded-circle p-0" style="width: 40px; height: 40px; line-height: 40px;">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light rounded-circle p-0" style="width: 40px; height: 40px; line-height: 40px;">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control bg-secondary border-0 py-3" placeholder="Nama Anda" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control bg-secondary border-0 py-3" placeholder="Alamat Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control bg-secondary border-0 py-3" placeholder="Subjek">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control bg-secondary border-0 py-3" rows="5" placeholder="Pesan" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">© 2025 Portofolio Muharir Al Hafidh. Semua Hak Dilindungi.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4" id="back-to-top" style="width: 50px; height: 50px; display: none;">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Back to top button
+        window.addEventListener('scroll', function() {
+            var backToTop = document.getElementById('back-to-top');
+            if (window.scrollY > 300) {
+                backToTop.style.display = 'flex';
+                backToTop.alignItems = 'center';
+                backToTop.justifyContent = 'center';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+
+        // Smooth scrolling for navbar links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Pesan Anda telah terkirim! Saya akan segera menghubungi Anda.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
+
